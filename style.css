@@ -201,7 +201,7 @@ flex containers to make their children flex items
     /* TODO 5: Style the product list header to match the mockup */
     text-align: center;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
 }
 #products header p{
     text-transform: uppercase;
@@ -217,12 +217,18 @@ flex containers to make their children flex items
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
 
     /* flexible parent styles here */
 }
 
 #products li{
-
+    width: 31%;
+    flex-shrink: 1;
+    margin: 10px;
     /* Styles for the li elements here */
 }
 #products li img{
