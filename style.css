@@ -157,6 +157,8 @@ flex containers to make their children flex items
 }
 #featured_products h2{
     /* TODO 4: Match the styles of the h2 to the mockup */
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
 #featured_products p{
     margin-top: 0;
@@ -197,6 +199,9 @@ flex containers to make their children flex items
 }
 #products header{
     /* TODO 5: Style the product list header to match the mockup */
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
 }
 #products header p{
     text-transform: uppercase;
