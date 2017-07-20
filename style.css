@@ -36,7 +36,11 @@ img{
 }
 .wrapper{
     background-color: #F5FFEB;
-    
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+
+
     /** TODO 1: Center the site on the screen and style it to match the mockup **/
 }
 
@@ -55,17 +59,29 @@ flex containers to make their children flex items
 #site_header{
     background-color: #262425;
     padding: 20px;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     /* #site_header styles here */
 }
 #logo{
     /* #logo styles here */
+    text-decoration: none;
+    color: #F5FFEB;
+    font-size: 2em;
 }
 #main_nav{
     /* #main_nav styles here */
+
 }
-#main_nav a{
+#main_nav a {
+    border-radius: 5px;
+    padding: 12px;
     background-color: #E57727;
+    text-decoration: none;
+    color: #F5FFEB;
     /* #navigation button styles here */
 }
 #main_nav a:hover{
@@ -78,19 +94,22 @@ flex containers to make their children flex items
 #call_to_action{
     background-color: #BA3610;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 
     /* parent styles here */
 }
 #call_to_action div{
     /* text column styles here */
+    flex-grow: 2;
 }
-#call_to_action div:first-child{
+#call_to_action div:second-child {
     /* image column styles here */
 }
 #call_to_action h1, #call_to_action p{
     color: white;
 }
-#call_to_action a{   
+#call_to_action a{
     background-color: #E57727;
     display: inline-block;
     padding: 12px 18px;
@@ -100,7 +119,7 @@ flex containers to make their children flex items
 }
 #call_to_action a:hover{
     background-color: #278A96;
-} 
+}
 
 /***************************/
 /**** FEATURED STYLES ******/
@@ -122,11 +141,16 @@ flex containers to make their children flex items
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
 
     /* flexible parent styles here */
 }
 #featured_products li{
     /* list item styles here */
+    margin: 10px;
+    flex-shrink: 1;
+    width: 32%;
 }
 #featured_products li img{
     border-radius: 4px;
